@@ -348,7 +348,7 @@ end
 local function createDetailWindow(entry)
     local detailWindow = ReGui:Window({
         Title = string.format("Request Details - %s %s", entry.method, entry.url),
-        Size = UDim2.fromOffset(300, 200)
+        Size = UDim2.fromOffset(600, 500)
     })
     
     table.insert(DetailWindows, detailWindow)
@@ -427,8 +427,9 @@ end
 
 local HTTPSpyWindow = ReGui:Window({
     Title = "HTTP Spy",
-    Size = UDim2.fromOffset(900, 600)
+    Size = UDim2.fromOffset(600, 400) -- smaller width and height
 })
+
 
 local Stats = {
     TotalRequests = 0,
