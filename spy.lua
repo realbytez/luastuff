@@ -427,7 +427,7 @@ end
 
 local HTTPSpyWindow = ReGui:Window({
     Title = "HTTP Spy",
-    Size = UDim2.fromOffset(600, 400) -- smaller width and height
+    Size = UDim2.fromOffset(400, 400) -- smaller width and height
 })
 
 
